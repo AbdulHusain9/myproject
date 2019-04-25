@@ -1,0 +1,228 @@
+<html>
+    <head><title>New Register</title></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+             background-color:white;
+             font-family: sans-serif;
+             font-size: 17px;
+        }
+        .form{
+            background-color: floralwhite;
+        }
+        .top td {
+            font-family: sans-serif;
+            font-size:20px; 
+        }
+         .middle td {
+            font-family: sans-serif;
+            font-size:20px; 
+        }
+         .bottom td {
+            font-family: sans-serif;
+            font-size:20px; 
+        }
+        .button {font-size: 24px;}
+        .top h1{
+            font-family:fantasy;
+            text-align: center;
+            color: darkcyan;
+        }
+        .top h2{
+            font-family:fantasy;
+            text-align: left;
+            color: darkcyan;
+        }
+        .middle h2{
+            font-family:fantasy;
+            color: darkcyan;
+            
+        }
+        .bottom h2{
+            font-family:fantasy;
+            color: darkcyan;
+        }
+         hr {
+            border: 1px solid #c0c0c0;
+            margin-bottom: 25px;
+        }
+        .top p{
+            font-size: 15px;
+            font-family: inherit;
+                color: red;
+        }
+        .bottom button{
+            text-align: center;
+            align-items: right;
+            
+        }
+        .submitbtn{
+            background-color: darkcyan;
+            color: white;
+            font-size: 17px;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .submitbtn:hover{
+            opacity: 1;
+        }
+        input[type=text], input[type=password] ,input[type=date] , input[type=tel],textarea,select,option{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+        
+    </style>
+    <body>
+        <div class="top">
+            <form action="regconn.php" method="post">
+                <table border="0" width="400" align="center" class="demo-table">
+                <h1>Register New Student</h1>    
+                <h2>Personal Information</h2>
+                <p>*Note: All The Informations are Required.</p>    
+                    
+                <hr>    
+                <tr>
+                <td>First name:</td>
+                <td><input type="text"  placeholder="First Name"name="fname" required ><br></td>
+                </tr>
+                <tr>
+                <td>Middle Name :</td>
+                <td><input type="text"  placeholder="Middle Name"name="mname" required ><br></td>
+                </tr>
+                <tr>
+                <td>last Name :</td>
+                <td><input type="text"  placeholder="Last Name"name="lname" required ><br></td>
+                </tr>
+                    <tr>
+                        <td> Gender :</td>
+                        <td>
+                            <input type="radio" name="gender" value="M"> Male
+                            <input type="radio" name="gender" value="F"> Female
+                        </td>
+             
+                    </tr>
+                <tr>
+                <td> Email :</td>
+                <td><input type="text"  placeholder="Email"name="email" required><br></td>
+                </tr>
+                    <tr>
+                        <td>DateOfBirth :</td>
+                        <td><input type="date" name="dob" required></td>
+                    </tr>
+                <tr>
+                <td> PassWord:</td>
+                <td><input type="password"  placeholder="PassWord"name="password" required><br></td>
+                </tr>
+                <tr>
+                <td>Country:</td>
+                <td><input type="text"  placeholder="Country"name="country" required><br></td>
+                </tr>
+                <tr>
+                <td>Contact No:</td>
+                <td><input type="tel"  placeholder="Mobile No."name="contact"required><br></td>
+                </tr>
+                
+                </table>
+                       
+         
+        </div>
+         <div class="middle">
+           
+                <table border="0" width="400" align="center" class="demo-table">
+                    
+                <h2>Parent Information</h2>
+                <hr>
+                <tr>
+                <td>Father name:</td>
+                <td><input type="text"  placeholder="Father Name"name="faname" required><br></td>
+                </tr>
+                <tr>
+                <td>Mother name:</td>
+                <td><input type="text"  placeholder="Mother Name"name="moname" required><br></td>
+                </tr>    
+                <tr>
+                <td>Parent Email :</td>
+                <td><input type="text"  placeholder="Email"name="pemail" required><br></td>
+                </tr>
+                <tr>
+                <td>Occupation:</td>
+                <td><input type="text"  placeholder="Occupation"name="occup" required><br></td>
+                </tr>
+                <tr>
+                <td>Address:</td>
+                <td><textarea name="address" placeholder="Address" cols="40" rows="5"></textarea><br></td>
+                </tr>
+                <tr>
+                  <td>Contact No:</td>
+                  <td><input type="tel"  placeholder="Mobile No."name="pcontact"required><br></td>
+                </tr>
+                </table>
+                       
+           
+        </div>
+        <div class="bottom">
+            
+                <table border="0" width="400" align="center" class="demo-table">
+                <h2>Course Details</h2>
+                <hr>
+                <tr>
+                    <td>Course Selection:</td>
+                    <td>
+                            <select name="coursename">
+                            <option selected hidden value="">BCA,BBA..etc</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BBA">BBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Semester:</td>
+                    <td>
+                        <select name="sem">
+                            <option selected hidden value="">Sem1,Sem2..etc</option>
+                            <option value="sem1">Semester I</option>
+                            <option value="sem2">Semester II</option>
+                            <option value="sem3">Semester III</option>
+                            <option value="sem4">Semester IV</option>
+                            <option value="sem5">Semester V</option>
+                            <option value="sem6">Semester VI</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                <td>College Name:</td>
+                <td><input type="text"  placeholder="Ex:IMED"name="collagename" required><br></td>
+                </tr>
+                <tr>
+                <td>Admission Year:</td>
+                <td><input type="text"  placeholder="Ex:2017/18"name="admissionyear" required><br></td>
+                </tr>
+                <tr>
+                <td>Date of join:</td>
+                <td><input type="date" name="doj" required><br></td>
+                </tr>
+                    
+                    
+                </table>
+               <br>
+                <br>
+             <td><button type="submit" id="button" name="button" class="submitbtn">Submit</td>
+            </form>
+        </div>
+    </body>
+</html>
